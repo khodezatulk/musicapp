@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:musicapp/core/configs/theme/app_theme.dart';
+import 'package:musicapp/presentation/splash/pages/splash.dart';
 
 void main() {
   runApp(MyApp());
@@ -11,6 +12,10 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(theme: AppTheme.lightTheme, home: Container());
+    return MaterialApp(
+      theme: AppTheme.lightTheme,
+      debugShowCheckedModeBanner: false,
+      home: const SplashPage(),
+    );
   }
 }
